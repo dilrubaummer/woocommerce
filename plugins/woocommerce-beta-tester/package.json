@@ -20,6 +20,7 @@
     }
   },
   "scripts": {
+    "postinstall": "composer install",
     "build": "./bin/build-zip.sh",
     "build:dev": "npm run lint:js && npm run uglify",
     "preuglify": "rm -f $npm_package_assets_js_min",
